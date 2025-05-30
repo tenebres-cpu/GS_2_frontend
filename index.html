@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Alert | Sistema Inteligente de Alerta de Enchentes</title>
+    <meta name="description" content="Solução tecnológica para alertas precoces de enchentes e alagamentos, salvando vidas e reduzindo danos">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-water"></i> Flood Alert
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#problema">O Problema</a></li>
+                    <li><a href="#solucao">Nossa Solução</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#prototipo">Protótipo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Alerta de Enchentes <span>que salva vidas</span></h1>
+                <p class="hero-text">Sistema inteligente de monitoramento hídrico em tempo real para prevenir tragédias</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-text">das vítimas não receberam alertas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">540k</span>
+                        <span class="stat-text">desabrigados no RS em 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/images/hero-device-app.png" alt="Dispositivo Flood Alert e aplicativo móvel" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Problema -->
+    <section id="problema" class="problem-section">
+        <div class="container">
+            <h2>A Cegueira Hidrológica no Brasil</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <h3>Mortes Evitáveis</h3>
+                    <p>80% das vítimas de enchentes não receberam alertas ou os receberam tarde demais (CEMADEN, 2023)</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Deslocamento em Massa</h3>
+                    <p>Em 2024, o RS registrou 540 mil desabrigados - muitos poderiam ter sido evacuados com antecedência</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-virus"></i>
+                    <h3>Crise de Saúde Pública</h3>
+                    <p>Surto de leptospirose e doenças hídricas 48 horas após alagamentos (FIOCRUZ, 2023)</p>
+                </div>
+            </div>
+            <div class="problem-video">
+                <div class="video-wrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <p class="video-caption">Impacto das enchentes no Brasil - Dados alarmantes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção da Solução -->
+    <section id="solucao" class="solution-section">
+        <div class="container">
+            <h2>Como o Flood Alert Funciona</h2>
+            <div class="solution-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Dispositivos de Monitoramento</h3>
+                        <p>Sensores ESP32 com DHT11, GPS e LDR coletam dados em tempo real de níveis de água, umidade e localização</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Análise Inteligente</h3>
+                        <p>Os dados são processados e comparados com padrões históricos para prever riscos de enchente</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Alertas Imediatos</h3>
+                        <p>Notificações sonoras (mesmo no silencioso) e visuais são enviadas para a população em risco</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Comunidade Integrada</h3>
+                        <p>Bate-papo local e mapa colaborativo permitem que usuários compartilhem informações em tempo real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Tecnologia -->
+    <section id="tecnologia" class="tech-section">
+        <div class="container">
+            <h2>Tecnologia por Trás da Solução</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="./assets/images/esp32.png" alt="ESP32" class="tech-img">
+                    <h3>ESP32</h3>
+                    <p>Microcontrolador com Wi-Fi e Bluetooth para comunicação dos sensores</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./assets/images/dht11.png" alt="Sensor DHT11" class="tech-img">
+                    <h3>DHT11</h3>
+                    <p>Sensor de umidade e temperatura para monitoramento ambiental</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./assets/images/gps-module.png" alt="Módulo GPS" class="tech-img">
+                    <h3>Módulo GPS</h3>
+                    <p>Precisão na localização dos pontos de monitoramento</p>
+                </div>
+                <div class="tech-card">
+                    <img src="./assets/images/ldr.png" alt="Sensor LDR" class="tech-img">
+                    <h3>LDR</h3>
+                    <p>Sensor de luz para detecção de níveis de água</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <h2>Diferenciais do Flood Alert</h2>
+            <div class="benefits-container">
+                <div class="benefits-image">
+                    <img src="./assets/images/app-screenshot.png" alt="Tela do aplicativo Flood Alert" class="img-fluid">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <i class="fas fa-bell"></i>
+                        <div>
+                            <h3>Alertas Sonoros Obrigatórios</h3>
+                            <p>O alarme soa mesmo com o celular no silencioso, garantindo que o alerta seja ouvido</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div>
+                            <h3>Mapa de Riscos Interativo</h3>
+                            <p>Visualização clara das áreas de risco baixo, médio e alto em tempo real</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h3>Bate-papo Comunitário</h3>
+                            <p>Comunicação direta entre usuários para compartilhamento de informações locais</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-universal-access"></i>
+                        <div>
+                            <h3>Design Acessível</h3>
+                            <p>Interface simples com cores e ícones intuitivos para rápido entendimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção do Protótipo -->
+    <section id="prototipo" class="prototype-section">
+        <div class="container">
+            <h2>Conheça Nosso Protótipo</h2>
+            <div class="prototype-content">
+                <div class="prototype-description">
+                    <p>Nosso aplicativo foi projetado para ser intuitivo e acessível, com foco na rápida compreensão da situação de risco.</p>
+                    <p>Princípios de UX/UI aplicados:</p>
+                    <ul>
+                        <li>Design minimalista com foco na informação essencial</li>
+                        <li>Sistema de cores intuitivo (verde/amarelo/vermelho)</li>
+                        <li>Navegação simplificada com no máximo 3 cliques para qualquer função</li>
+                        <li>Ícones universais para compreensão imediata</li>
+                    </ul>
+                    <a href="LINK_FIGMA" class="figma-button" target="_blank">
+                        <i class="fab fa-figma"></i> Ver protótipo completo no Figma
+                    </a>
+                </div>
+                <div class="prototype-slider">
+                    <div class="slider-container" id="prototypeSlider">
+                        <img src="./assets/images/prototype-1.jpg" alt="Tela inicial do aplicativo" class="slider-img active">
+                        <img src="./assets/images/prototype-2.jpg" alt="Mapa de riscos" class="slider-img">
+                        <img src="./assets/images/prototype-3.jpg" alt="Bate-papo comunitário" class="slider-img">
+                        <img src="./assets/images/prototype-4.jpg" alt="Configurações de alerta" class="slider-img">
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Casos de Uso -->
+    <section class="use-case-section">
+        <div class="container">
+            <h2>Como o Flood Alert Pode Ajudar</h2>
+            <div class="use-case">
+                <div class="use-case-image">
+                    <img src="./assets/images/use-case.jpg" alt="Pessoa no trânsito durante chuva" class="img-fluid">
+                </div>
+                <div class="use-case-text">
+                    <h3>Situação Crítica no Trânsito</h3>
+                    <p>Imagine você no trânsito quando começa a chover forte e a água começa a subir rapidamente. Você precisa decidir se vira à esquerda ou à direita, mas não sabe qual rota está alagando.</p>
+                    <p>Com o Flood Alert, você tem duas opções imediatas:</p>
+                    <ol>
+                        <li>Consultar o mapa interativo que mostra em cores as áreas de risco ao redor</li>
+                        <li>Acessar o bate-papo local para perguntar a outros usuários qual rota está mais segura</li>
+                    </ol>
+                    <p>Informação rápida pode significar a diferença entre chegar em segurança ou ficar preso em uma enchente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Parceiro -->
+    <section class="partner-section">
+        <div class="container">
+            <h2>Parceiro Estratégico</h2>
+            <div class="partner-content">
+                <img src="./assets/images/governo-federal-logo.png" alt="Governo Federal - Ministério da Integração Nacional" class="partner-logo">
+                <div class="partner-text">
+                    <h3>Governo Federal / Ministério da Integração Nacional</h3>
+                    <p>Responsável por políticas de defesa civil e gestão de desastres no Brasil, nosso parceiro estratégico na implementação desta solução que tem potencial para salvar milhares de vidas.</p>
+                    <p>Stakeholders principais: Defesa Civil Nacional e Estaduais, responsáveis pela implementação de sistemas de alerta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3><i class="fas fa-water"></i> Flood Alert</h3>
+                    <p>Solução tecnológica para alertas precoces de enchentes e alagamentos, desenvolvida por Marcelo Affonso Fonseca (RM: 559790)</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#problema">O Problema</a></li>
+                        <li><a href="#solucao">Nossa Solução</a></li>
+                        <li><a href="#prototipo">Protótipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <p>Para mais informações sobre o projeto:</p>
+                    <a href="mailto:contato@floodalert.com.br" class="contact-link">
+                        <i class="fas fa-envelope"></i> contato@floodalert.com.br
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Flood Alert. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Customizado -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
