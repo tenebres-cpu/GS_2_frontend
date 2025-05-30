@@ -1,10 +1,10 @@
-// Menu Hamburguer
+
 document.getElementById('menuToggle').addEventListener('click', function() {
     this.classList.toggle('active');
     document.getElementById('navLinks').classList.toggle('active');
 });
 
-// Fechar menu ao clicar em um link
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('menuToggle').classList.remove('active');
@@ -12,12 +12,12 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Slider do Protótipo
+
 let currentSlide = 0;
 const slides = document.querySelectorAll('.slider-img');
 const dotsContainer = document.querySelector('.slider-dots');
 
-// Criar dots de navegação
+
 slides.forEach((slide, index) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -53,7 +53,7 @@ document.querySelector('.slider-prev').addEventListener('click', () => {
     updateSlider();
 });
 
-// Animação de Scroll
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -63,7 +63,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Simulador de Alerta
+
 const alertButton = document.createElement('button');
 alertButton.textContent = 'Simular Alerta de Enchente';
 alertButton.classList.add('alert-button');
@@ -85,7 +85,7 @@ function showAlertDemo() {
     
     document.body.appendChild(alertBox);
     
-    // Simular som de alerta (seria substituído por um arquivo real)
+
     console.log("ALERTA SONORO: BEEP BEEP BEEP");
     
     document.querySelector('.close-alert').addEventListener('click', () => {
@@ -93,9 +93,9 @@ function showAlertDemo() {
     });
 }
 
-// Carregar dados de risco simulados (exemplo)
+
 function loadRiskData() {
-    // Simulação de dados - na implementação real seria uma API
+
     const mockData = {
         riskLevels: [
             { location: "Centro", risk: "high" },
@@ -105,15 +105,15 @@ function loadRiskData() {
     };
     
     console.log("Dados de risco carregados:", mockData);
-    // Aqui você implementaria a atualização do mapa com os dados reais
+
 }
 
-// Inicialização
+
 document.addEventListener('DOMContentLoaded', () => {
     loadRiskData();
     updateSlider();
     
-    // Ativar primeiro slide
+
     if(slides.length > 0) {
         slides[0].classList.add('active');
     }

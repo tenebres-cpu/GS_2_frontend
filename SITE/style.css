@@ -1,4 +1,4 @@
-/* Reset e Estilos Globais */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-/* Cores */
+
 :root {
     --primary-color: #0066cc;
     --secondary-color: #ff6600;
@@ -31,7 +31,7 @@ body {
     --black: #000000;
 }
 
-/* Header */
+
 .header {
     background-color: var(--dark-color);
     color: var(--white);
@@ -87,7 +87,7 @@ body {
     cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
     padding: 120px 0 60px;
     background-color: var(--light-color);
@@ -156,7 +156,7 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Problem Section */
+
 .problem-section {
     padding: 4rem 0;
     background-color: var(--white);
@@ -233,7 +233,7 @@ body {
     opacity: 0.8;
 }
 
-/* Solution Section */
+
 .solution-section {
     padding: 4rem 0;
     background-color: var(--light-color);
@@ -278,7 +278,7 @@ body {
     font-size: 1.3rem;
 }
 
-/* Tech Section */
+
 .tech-section {
     padding: 4rem 0;
     background-color: var(--white);
@@ -325,7 +325,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Benefits Section */
+
 .benefits-section {
     padding: 4rem 0;
     background-color: var(--light-color);
@@ -379,7 +379,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Prototype Section */
+
 .prototype-section {
     padding: 4rem 0;
     background-color: var(--white);
@@ -506,7 +506,7 @@ body {
     background: var(--primary-color);
 }
 
-/* Use Case Section */
+
 .use-case-section {
     padding: 4rem 0;
     background-color: var(--light-color);
@@ -561,7 +561,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Partner Section */
+
 .partner-section {
     padding: 4rem 0;
     background-color: var(--white);
@@ -597,7 +597,7 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Footer */
+
 .footer {
     padding: 3rem 0 1rem;
     background-color: var(--dark-color);
@@ -679,7 +679,7 @@ body {
     opacity: 0.7;
 }
 
-/* Botão de Alerta de Demonstração */
+
 .alert-button {
     display: block;
     margin: 2rem auto 0;
@@ -755,7 +755,7 @@ body {
     background-color: #b30000;
 }
 
-/* Animações */
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -771,7 +771,7 @@ body {
     }
 }
 
-/* Responsividade */
+
 @media (max-width: 992px) {
     .hero .container,
     .benefits-container,
